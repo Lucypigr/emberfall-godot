@@ -21,7 +21,7 @@ jobs:
       - name: Import project
         run: godot --headless --path godot_v2 --import --quit
       - name: Headless smoke
-        run: godot --headless --path godot_v2 --script res://tests/smoke.gd
+        run: godot --headless --path godot_v2 --script res://tests/emberfall_smoke.gd
       - name: Export Web
         run: |
           mkdir -p build/web
