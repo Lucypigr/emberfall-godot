@@ -1,0 +1,881 @@
+{
+  "active": {
+    "fireball": {
+      "name": "烈焰火球",
+      "icon": "✷",
+      "color": "#f3af62",
+      "tags": [
+        "spell",
+        "projectile",
+        "area",
+        "hit"
+      ],
+      "desc": "火球命中後爆炸，擅長清除密集敵群。",
+      "damage": 24,
+      "rate": 1.8,
+      "speed": 380,
+      "blast": 28,
+      "socket": "B"
+    },
+    "ice": {
+      "name": "冰霜長矛",
+      "icon": "❄",
+      "color": "#8dd9ed",
+      "tags": [
+        "spell",
+        "projectile",
+        "hit"
+      ],
+      "desc": "高速冰矛自帶一次穿透，命中緩速 35%。",
+      "damage": 31,
+      "rate": 1.3,
+      "speed": 490,
+      "pierce": 1,
+      "slow": 0.35,
+      "socket": "B"
+    },
+    "arc": {
+      "name": "連鎖閃電",
+      "icon": "ϟ",
+      "color": "#d5c4fa",
+      "tags": [
+        "spell",
+        "chain",
+        "hit"
+      ],
+      "desc": "瞬間擊中目標，並跳向附近另外 2 名敵人。",
+      "damage": 30,
+      "rate": 1.05,
+      "chain": 2,
+      "socket": "B"
+    },
+    "nova": {
+      "name": "寒冰新星",
+      "icon": "✺",
+      "color": "#91c9e5",
+      "tags": [
+        "spell",
+        "area",
+        "hit"
+      ],
+      "desc": "以自身為中心釋放冰環，緩速附近所有敵人。",
+      "damage": 36,
+      "rate": 0.65,
+      "radius": 145,
+      "slow": 0.35,
+      "socket": "B"
+    },
+    "orbit": {
+      "name": "環刃風暴",
+      "icon": "✥",
+      "color": "#c4deb0",
+      "tags": [
+        "area",
+        "duration",
+        "hit"
+      ],
+      "desc": "兩枚刀刃持續環繞自身，切割靠近的敵人。",
+      "damage": 15,
+      "rate": 4,
+      "radius": 76,
+      "socket": "G"
+    },
+    "meteor": {
+      "name": "隕星墜落",
+      "icon": "☄",
+      "color": "#f5b38e",
+      "tags": [
+        "spell",
+        "area",
+        "hit"
+      ],
+      "desc": "在敵人腳下標記落點，延遲 0.65 秒降下隕石。",
+      "damage": 95,
+      "rate": 0.45,
+      "radius": 95,
+      "socket": "B"
+    },
+    "spark": {
+      "name": "靈電火花",
+      "icon": "ϟ",
+      "color": "#e5d987",
+      "socket": "B",
+      "tags": [
+        "spell",
+        "projectile",
+        "hit"
+      ],
+      "desc": "三道電火花扇射，碰到地形反彈。",
+      "damage": 16,
+      "rate": 1.3,
+      "speed": 280,
+      "count": 3,
+      "ricochet": 3
+    },
+    "ball": {
+      "name": "雷鳴法球",
+      "icon": "◉",
+      "color": "#c3bbfa",
+      "socket": "B",
+      "tags": [
+        "spell",
+        "projectile",
+        "area",
+        "duration",
+        "hit"
+      ],
+      "desc": "緩慢前進的雷球，每 0.3 秒電擊周圍敵人。",
+      "damage": 14,
+      "rate": 0.55,
+      "speed": 90,
+      "radius": 88,
+      "duration": 4
+    },
+    "poison": {
+      "name": "腐蝕箭",
+      "icon": "➶",
+      "color": "#b2cf7c",
+      "socket": "G",
+      "tags": [
+        "projectile",
+        "hit"
+      ],
+      "desc": "毒箭命中後侵蝕 3 秒。",
+      "damage": 25,
+      "rate": 1.5,
+      "speed": 430,
+      "poison": 0.3
+    },
+    "frostbomb": {
+      "name": "霜爆",
+      "icon": "❆",
+      "color": "#a4e5ed",
+      "socket": "B",
+      "tags": [
+        "spell",
+        "area",
+        "hit"
+      ],
+      "desc": "在目標處埋下冰爆，1 秒後凍傷並緩速。",
+      "damage": 80,
+      "rate": 0.55,
+      "radius": 125,
+      "slow": 0.55
+    },
+    "bladefall": {
+      "name": "刃雨",
+      "icon": "⋮",
+      "color": "#cdd7c0",
+      "socket": "G",
+      "tags": [
+        "spell",
+        "area",
+        "hit"
+      ],
+      "desc": "三波刀刃依序落下，覆蓋目標附近。",
+      "damage": 35,
+      "rate": 0.65,
+      "radius": 75
+    },
+    "totem": {
+      "name": "烈焰圖騰",
+      "icon": "♜",
+      "color": "#f1bd7a",
+      "socket": "R",
+      "tags": [
+        "spell",
+        "duration",
+        "hit"
+      ],
+      "desc": "召喚持續 5 秒的圖騰，每 0.6 秒發射火焰。",
+      "damage": 20,
+      "rate": 0.24,
+      "duration": 5
+    },
+    "shockwave": {
+      "name": "裂地震波",
+      "icon": "≋",
+      "color": "#dbb689",
+      "socket": "R",
+      "tags": [
+        "area",
+        "hit"
+      ],
+      "desc": "朝敵人方向釋放扇形衝擊，擊退近敵。",
+      "damage": 65,
+      "rate": 0.85,
+      "radius": 185,
+      "knockback": 24
+    },
+    "cyclone": {
+      "name": "旋風斬",
+      "icon": "↻",
+      "color": "#d3dcc3",
+      "socket": "G",
+      "tags": [
+        "area",
+        "duration",
+        "hit"
+      ],
+      "desc": "持續切割自身周圍敵人，每秒攻擊 4 次。",
+      "damage": 14,
+      "rate": 4,
+      "radius": 72
+    },
+    "spectral": {
+      "name": "靈刃投擲",
+      "icon": "†",
+      "color": "#9dd9bb",
+      "socket": "G",
+      "tags": [
+        "projectile",
+        "hit"
+      ],
+      "desc": "穿透靈刃飛出後折返，回程可再次命中。",
+      "damage": 27,
+      "rate": 1.15,
+      "speed": 310,
+      "pierce": 20,
+      "returning": true
+    },
+    "magma": {
+      "name": "熔岩彈",
+      "icon": "●",
+      "color": "#f2a56d",
+      "socket": "R",
+      "tags": [
+        "spell",
+        "projectile",
+        "area",
+        "hit"
+      ],
+      "desc": "爆炸熔岩彈會連鎖彈向另外兩個敵人。",
+      "damage": 35,
+      "rate": 1.05,
+      "speed": 290,
+      "blast": 45,
+      "chain": 2
+    },
+    "blizzard": {
+      "name": "暴風雪",
+      "icon": "❋",
+      "color": "#a8d8eb",
+      "socket": "B",
+      "tags": [
+        "spell",
+        "area",
+        "duration",
+        "hit"
+      ],
+      "desc": "在目標位置留下 3 秒冰雪，每半秒造成傷害。",
+      "damage": 18,
+      "rate": 0.4,
+      "radius": 125,
+      "duration": 3,
+      "slow": 0.3
+    },
+    "barrage": {
+      "name": "疾風連射",
+      "icon": "⋙",
+      "color": "#d9c394",
+      "socket": "G",
+      "tags": [
+        "projectile",
+        "hit"
+      ],
+      "desc": "短時間連射四箭，適合集中攻擊首領。",
+      "damage": 15,
+      "rate": 0.9,
+      "speed": 490
+    },
+    "phoenix": {
+      "name": "不死鳥降臨",
+      "icon": "✹",
+      "exclusive": true,
+      "color": "#ffb653",
+      "socket": "W",
+      "tags": [
+        "spell",
+        "area",
+        "hit"
+      ],
+      "desc": "鳳凰降臨造成範圍傷害，並回復最大生命 12%。",
+      "damage": 180,
+      "rate": 0.25,
+      "radius": 300
+    },
+    "astral": {
+      "name": "星界萬箭",
+      "icon": "✧",
+      "exclusive": true,
+      "color": "#dec5ff",
+      "socket": "W",
+      "tags": [
+        "projectile",
+        "hit"
+      ],
+      "desc": "射出 5 枚穿透星矢。",
+      "damage": 65,
+      "rate": 1.1,
+      "speed": 450,
+      "count": 5,
+      "pierce": 3
+    },
+    "judgment": {
+      "name": "雷神天罰",
+      "icon": "ϟ",
+      "exclusive": true,
+      "color": "#b7dfff",
+      "socket": "W",
+      "tags": [
+        "spell",
+        "area",
+        "hit"
+      ],
+      "desc": "雷霆重擊周圍敵人並緩速 70%。",
+      "damage": 260,
+      "rate": 0.35,
+      "radius": 260,
+      "slow": 0.7
+    },
+    "embertrail": {
+      "name": "焚燼足跡",
+      "icon": "♨",
+      "color": "#f6a365",
+      "socket": "R",
+      "trail": true,
+      "tags": [
+        "spell",
+        "area",
+        "duration",
+        "hit"
+      ],
+      "desc": "移動時留下 3 秒火焰，每半秒灼傷踩入的敵人。",
+      "damage": 14,
+      "rate": 3,
+      "radius": 38,
+      "duration": 3
+    },
+    "frosttrail": {
+      "name": "霜行之徑",
+      "icon": "❄",
+      "color": "#9cdef4",
+      "socket": "B",
+      "trail": true,
+      "tags": [
+        "spell",
+        "area",
+        "duration",
+        "hit"
+      ],
+      "desc": "移動時留下 3 秒冰徑，傷害並緩速敵人 50%。",
+      "damage": 9,
+      "rate": 3,
+      "radius": 42,
+      "duration": 3,
+      "slow": 0.5
+    },
+    "toxictrail": {
+      "name": "腐蝕步道",
+      "icon": "☣",
+      "color": "#afd779",
+      "socket": "G",
+      "trail": true,
+      "tags": [
+        "spell",
+        "area",
+        "duration",
+        "hit"
+      ],
+      "desc": "移動時留下 4 秒毒霧，踩入的敵人附加腐蝕。",
+      "damage": 11,
+      "rate": 2.5,
+      "radius": 40,
+      "duration": 4,
+      "poison": 0.18
+    },
+    "swiftaura": {
+      "name": "疾行光環",
+      "icon": "↟",
+      "color": "#aed591",
+      "socket": "G",
+      "aura": {
+        "speed": 35,
+        "damage": 0.75
+      },
+      "tags": [
+        "aura"
+      ],
+      "desc": "手動開關：移速 +35%，造成傷害 -25%。占用一個自由孔，不接受輔助。",
+      "damage": 0,
+      "rate": 0
+    },
+    "wrathaura": {
+      "name": "狂熱光環",
+      "icon": "✦",
+      "color": "#e28e7c",
+      "socket": "R",
+      "aura": {
+        "damage": 1.45,
+        "armor": -4
+      },
+      "tags": [
+        "aura"
+      ],
+      "desc": "手動開關：造成傷害 +45%，護甲 -4。占用一個自由孔，不接受輔助。",
+      "damage": 0,
+      "rate": 0
+    },
+    "renewalaura": {
+      "name": "復甦光環",
+      "icon": "♥",
+      "color": "#91ccec",
+      "socket": "B",
+      "aura": {
+        "regen": 4,
+        "speed": -18
+      },
+      "tags": [
+        "aura"
+      ],
+      "desc": "手動開關：每秒回血 4 點，移速 -18%。占用一個自由孔，不接受輔助。",
+      "damage": 0,
+      "rate": 0
+    },
+    "sunshot": {
+      "name": "烈日穿星",
+      "icon": "☀",
+      "color": "#f6bc70",
+      "socket": "R",
+      "tags": [
+        "spell",
+        "projectile",
+        "hit"
+      ],
+      "desc": "射出穿透 4 名敵人的烈日光矛。",
+      "damage": 48,
+      "rate": 0.85,
+      "speed": 460,
+      "pierce": 4
+    },
+    "thornburst": {
+      "name": "荊棘齊射",
+      "icon": "✣",
+      "color": "#b6d38b",
+      "socket": "G",
+      "tags": [
+        "projectile",
+        "hit"
+      ],
+      "desc": "同時射出 5 枚帶毒荊棘。",
+      "damage": 12,
+      "rate": 1.15,
+      "speed": 340,
+      "count": 5,
+      "poison": 0.15
+    }
+  },
+  "support": {
+    "multi": {
+      "name": "多重投射",
+      "icon": "⋔",
+      "tags": [
+        "projectile"
+      ],
+      "desc": "+2 顆投射物；每顆傷害降低 25%。",
+      "socket": "G",
+      "formula": "s=>{s.count+=2;s.damage*=.75}"
+    },
+    "pierce": {
+      "name": "穿透",
+      "icon": "➶",
+      "tags": [
+        "projectile"
+      ],
+      "desc": "額外穿透 2 名敵人；傷害降低 10%。",
+      "socket": "G",
+      "formula": "s=>{s.pierce+=2;s.damage*=.9}"
+    },
+    "chain": {
+      "name": "連鎖",
+      "icon": "⌁",
+      "tags": [
+        "projectile",
+        "chain"
+      ],
+      "desc": "額外連鎖 2 次；每次跳躍保留 85% 傷害。",
+      "socket": "G",
+      "formula": "s=>{s.chain+=2;s.damage*=.9}"
+    },
+    "fork": {
+      "name": "分裂",
+      "icon": "⋎",
+      "tags": [
+        "projectile"
+      ],
+      "desc": "首次命中分裂為 2 枚；分裂傷害為 60%。",
+      "socket": "G",
+      "formula": "s=>s.fork=true"
+    },
+    "echo": {
+      "name": "施法迴響",
+      "icon": "◎",
+      "tags": [
+        "spell"
+      ],
+      "desc": "0.22 秒後再施放一次；每次傷害降低 30%。",
+      "socket": "B",
+      "formula": "s=>{s.echo=true;s.damage*=.7}"
+    },
+    "area": {
+      "name": "擴大範圍",
+      "icon": "◌",
+      "tags": [
+        "area"
+      ],
+      "desc": "範圍半徑 +45%；傷害降低 10%。",
+      "socket": "B",
+      "formula": "s=>{s.radius*=1.45;s.blast*=1.45;s.damage*=.9}"
+    },
+    "swift": {
+      "name": "快速施法",
+      "icon": "↟",
+      "tags": [
+        "spell"
+      ],
+      "desc": "施法頻率 +35%；傷害降低 10%。",
+      "socket": "B",
+      "formula": "s=>{s.rate*=1.35;s.damage*=.9}"
+    },
+    "burn": {
+      "name": "點燃",
+      "icon": "♨",
+      "tags": [
+        "hit"
+      ],
+      "desc": "命中後燃燒 3 秒，每秒造成命中傷害的 15%。",
+      "socket": "R",
+      "formula": "s=>s.burn=.15"
+    },
+    "leech": {
+      "name": "生命偷取",
+      "icon": "♥",
+      "tags": [
+        "hit"
+      ],
+      "desc": "命中回復傷害的 3%；每秒最多回復 8 點。",
+      "socket": "R",
+      "formula": "s=>s.leech=.03"
+    },
+    "execute": {
+      "name": "撲殺",
+      "icon": "✧",
+      "tags": [
+        "hit"
+      ],
+      "desc": "命中生命低於 10% 的敵人直接擊殺，包含 Boss。",
+      "socket": "G",
+      "formula": "s=>s.execute=true"
+    },
+    "poison": {
+      "name": "毒化",
+      "icon": "☣",
+      "socket": "G",
+      "tags": [
+        "hit"
+      ],
+      "desc": "命中附加 3 秒腐蝕，每秒為命中傷害 18%。",
+      "formula": "s=>s.poison=Math.max(s.poison,.18)"
+    },
+    "knockback": {
+      "name": "擊退",
+      "icon": "»",
+      "socket": "R",
+      "tags": [
+        "hit"
+      ],
+      "desc": "命中將普通敵人推離 22 距離；首領減半。",
+      "formula": "s=>s.knockback+=22"
+    },
+    "duration": {
+      "name": "持續延長",
+      "icon": "◷",
+      "socket": "R",
+      "tags": [
+        "duration"
+      ],
+      "desc": "持續技能的存在時間延長 60%。",
+      "formula": "s=>s.duration*=1.6"
+    },
+    "velocity": {
+      "name": "高速投射",
+      "icon": "➠",
+      "socket": "G",
+      "tags": [
+        "projectile"
+      ],
+      "desc": "投射物速度 +50%、傷害 +10%。",
+      "formula": "s=>{s.speed*=1.5;s.damage*=1.1}"
+    },
+    "concentrate": {
+      "name": "集中效應",
+      "icon": "⊙",
+      "socket": "B",
+      "tags": [
+        "area"
+      ],
+      "desc": "範圍半徑降低 25%，傷害增加 45%。",
+      "formula": "s=>{s.radius*=.75;s.blast*=.75;s.damage*=1.45}"
+    },
+    "critical": {
+      "name": "精準暴擊",
+      "icon": "✧",
+      "socket": "G",
+      "tags": [
+        "hit"
+      ],
+      "desc": "命中有 25% 機率造成雙倍傷害。",
+      "formula": "s=>s.crit=.25"
+    },
+    "chill": {
+      "name": "冰緩",
+      "icon": "❄",
+      "socket": "B",
+      "tags": [
+        "hit"
+      ],
+      "desc": "命中使敵人緩速至少 40%，持續 2 秒。",
+      "formula": "s=>s.slow=Math.max(s.slow,.4)"
+    },
+    "empower": {
+      "name": "強化",
+      "icon": "✦",
+      "socket": "R",
+      "tags": [
+        "hit"
+      ],
+      "desc": "每次命中傷害增加 25%。",
+      "formula": "s=>s.damage*=1.25"
+    },
+    "infinity": {
+      "name": "無盡投射",
+      "icon": "∞",
+      "rarity": "legendary",
+      "socket": "G",
+      "tags": [
+        "projectile"
+      ],
+      "desc": "額外 +10 顆投射物，沒有傷害懲罰。",
+      "formula": "s=>{s.count+=10}"
+    },
+    "dominion": {
+      "name": "神域之力",
+      "icon": "✦",
+      "rarity": "legendary",
+      "socket": "R",
+      "tags": [
+        "hit"
+      ],
+      "desc": "命中傷害提升至 3 倍。",
+      "formula": "s=>{s.damage*=3}"
+    },
+    "eternity": {
+      "name": "永恆連鎖",
+      "icon": "⌁",
+      "rarity": "legendary",
+      "socket": "B",
+      "tags": [
+        "projectile",
+        "chain"
+      ],
+      "desc": "額外連鎖 8 次，施放頻率 +50%。",
+      "formula": "s=>{s.chain+=8;s.rate*=1.5}"
+    },
+    "heavy": {
+      "name": "沉重打擊",
+      "icon": "◆",
+      "socket": "R",
+      "tags": [
+        "hit"
+      ],
+      "desc": "傷害 +50%，施放頻率 -20%。",
+      "formula": "s=>{s.damage*=1.5;s.rate*=.8}"
+    },
+    "wide": {
+      "name": "廣域蔓延",
+      "icon": "◌",
+      "socket": "B",
+      "tags": [
+        "area"
+      ],
+      "desc": "範圍半徑 +70%，傷害 -30%。",
+      "formula": "s=>{s.radius*=1.7;s.blast*=1.7;s.damage*=.7}"
+    },
+    "lingering": {
+      "name": "悠長餘韻",
+      "icon": "◷",
+      "socket": "G",
+      "tags": [
+        "duration"
+      ],
+      "desc": "持續時間 +80%，傷害 -20%。",
+      "formula": "s=>{s.duration*=1.8;s.damage*=.8}"
+    },
+    "siphon": {
+      "name": "鮮血汲取",
+      "icon": "♥",
+      "socket": "R",
+      "tags": [
+        "hit"
+      ],
+      "desc": "命中偷取生命提高至至少 6%，傷害 -15%；仍受每秒回血上限限制。",
+      "formula": "s=>{s.leech=Math.max(s.leech,.06);s.damage*=.85}"
+    }
+  },
+  "weapons": [
+    {
+      "name": "燼火法杖",
+      "icon": "⚚",
+      "bonus": "spell",
+      "socket": "B"
+    },
+    {
+      "name": "裂風長弓",
+      "icon": "➶",
+      "bonus": "projectile",
+      "socket": "G"
+    },
+    {
+      "name": "斷岳戰斧",
+      "icon": "⚒",
+      "bonus": "area",
+      "socket": "R"
+    },
+    {
+      "name": "霜紋權杖",
+      "icon": "♜",
+      "bonus": "spell",
+      "socket": "B"
+    },
+    {
+      "name": "幽影匕首",
+      "icon": "†",
+      "bonus": "hit",
+      "socket": "G"
+    },
+    {
+      "name": "隕鐵重錘",
+      "icon": "✥",
+      "bonus": "area",
+      "socket": "R"
+    }
+  ],
+  "armor": [
+    {
+      "slot": "cloak",
+      "name": "灰燼披風",
+      "icon": "◭",
+      "bonus": "spell"
+    },
+    {
+      "slot": "cloak",
+      "name": "暮影斗篷",
+      "icon": "◮",
+      "bonus": "hit"
+    },
+    {
+      "slot": "legs",
+      "name": "疾風護腿",
+      "icon": "♜",
+      "bonus": "projectile"
+    },
+    {
+      "slot": "legs",
+      "name": "隕鐵腿甲",
+      "icon": "♜",
+      "bonus": "area"
+    }
+  ],
+  "affixes": [
+    {
+      "id": "fierce",
+      "kind": "prefix",
+      "name": "殘暴的",
+      "stat": "damage",
+      "label": "本組傷害",
+      "unit": "%",
+      "min": 12,
+      "max": 22
+    },
+    {
+      "id": "spell",
+      "kind": "prefix",
+      "name": "秘法的",
+      "stat": "spell",
+      "label": "本組法術傷害",
+      "unit": "%",
+      "min": 18,
+      "max": 30
+    },
+    {
+      "id": "piercing",
+      "kind": "prefix",
+      "name": "穿心的",
+      "stat": "projectile",
+      "label": "本組投射物傷害",
+      "unit": "%",
+      "min": 18,
+      "max": 30
+    },
+    {
+      "id": "sharp",
+      "kind": "prefix",
+      "name": "銳利的",
+      "stat": "flat",
+      "label": "本組基礎命中傷害",
+      "unit": "",
+      "min": 3,
+      "max": 7
+    },
+    {
+      "id": "casting",
+      "kind": "suffix",
+      "name": "之迅咒",
+      "stat": "rate",
+      "label": "本組施放頻率",
+      "unit": "%",
+      "min": 8,
+      "max": 15
+    },
+    {
+      "id": "crit",
+      "kind": "suffix",
+      "name": "之精準",
+      "stat": "crit",
+      "label": "本組暴擊機率",
+      "unit": "%",
+      "min": 5,
+      "max": 10
+    },
+    {
+      "id": "guard",
+      "kind": "suffix",
+      "name": "之守護",
+      "stat": "armor",
+      "label": "角色護甲",
+      "unit": "",
+      "min": 1,
+      "max": 3
+    },
+    {
+      "id": "wind",
+      "kind": "suffix",
+      "name": "之疾風",
+      "stat": "speed",
+      "label": "角色移動速度",
+      "unit": "%",
+      "min": 4,
+      "max": 8
+    }
+  ]
+}

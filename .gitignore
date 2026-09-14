@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+node_modules/
+.vscode/
+.idea/
+*.log
+.cache/
+godot/fonts/NotoSansTC-Riftforged.ttf
+godot_v2/fonts/NotoSansCJKtc-Regular.otf
+godot_v2/fonts/NotoSansTC-Riftforged.ttf

@@ -1,0 +1,21 @@
+; Riftforged Godot clean rebuild.
+; This project intentionally does not inherit the old prototype's font/runtime patches.
+config_version=5
+
+[application]
+config/name="Emberfall Independent Godot"
+run/main_scene="res://main.tscn"
+
+[display]
+window/size/viewport_width=390
+window/size/viewport_height=844
+window/stretch/mode="canvas_items"
+window/handheld/orientation=0
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+
+[physics]
+common/enable_pause_aware_picking=true
