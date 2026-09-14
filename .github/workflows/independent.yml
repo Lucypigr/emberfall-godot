@@ -1,0 +1,46 @@
+name: Emberfall Independent Godot
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: chickensoft-games/setup-godot@v2
+        with:
+          version: 4.7.2
+          use-dotnet: false
+          include-templates: true
+      - name: Prepare imported Noto Sans TC
+        run: python3 godot_v2/tools/prepare_font.py --project godot_v2
+      - name: Import project
+        run: godot --headless --path godot_v2 --import --quit
+      - name: Headless smoke
+        run: godot --headless --path godot_v2 --script res://tests/smoke.gd
+      - name: Export Web
+        run: |
+          mkdir -p build/web
+          godot --headless --path godot_v2 --export-release Web $GITHUB_WORKSPACE/build/web/index.html
+          test -s build/web/index.wasm
+          test -s build/web/index.pck
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/web
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
